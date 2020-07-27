@@ -2,7 +2,7 @@
 %Start with unimodal f(x) and minimum in [a,b]
 %Input: function f, interval [a,b], number of steps k
 %Output: approximate minimum y
-function y = gss(f,a,b,k)
+function y = GoldenSectionSearch(f,a,b,k)
   g = (sqrt(5)-1)/2;
   x1 = a+(1-g)*(b-a);
   x2 = a+g*(b-a);
